@@ -1,0 +1,87 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(185, 235, 239);
+  color: rgb(210, 112, 102);
+}
+
+.header h1 {
+  text-transform: uppercase;
+  font-size: 3.25em;
+  font-weight: 600;
+  position: relative;
+  top: -25px;
+}
+
+.main-content {
+  width: calc(100% - 100px);
+  height: 50%;
+  display: flex;
+  background-color: rgb(210, 112, 102);
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content .row {
+  height: 100%;
+}
+
+.main-content .single-box {
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.main-content .single-box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.75em;
+}
+
+.main-content .single-box a > span {
+  display: block;
+  position: relative;
+  transition: 0.4s ease-in-out;
+}
+
+.main-content .single-box:hover {
+  background-color: rgb(201, 98, 88);
+}
+
+.main-content .single-box:hover a > span {
+  transform: scale(1.2);
+}
+
+@media (max-width: 767px) {
+  .header h1 {
+    font-size: 2.75em;
+  }
+}
